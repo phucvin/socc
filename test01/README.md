@@ -4,9 +4,9 @@ sudo apt install opam
 
 opam init
 
-opam install core
+opam switch create nqcc2-env 5.2.0
 
-opam install menhir
+opam install core ppx_jane ocamlbuild ocamlfind menhir
 
 opam install ocaml-lsp-server ocamlformat
 
@@ -17,3 +17,7 @@ make
 ./main.native < test01/t01.c
 
 ./testc test
+
+
+Notes:
+- https://compiler-explorer.com/z/vdsEc7Wj6
