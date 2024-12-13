@@ -4,7 +4,7 @@ sudo apt install opam
 
 opam init
 
-opam switch create nqcc2-env 5.2.0
+opam switch create env1 4.14.2
 
 opam install core ppx_jane ocamlbuild ocamlfind menhir
 
